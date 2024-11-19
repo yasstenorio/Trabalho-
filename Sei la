@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Em Busca da Cidade Perdida</title>
+</head>
+<body>
+    <header>
+        <h1>🌴 Em Busca da Cidade Perdida 🌴</h1>
+    </header>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="img/cenario-passo0.png" alt="Cenário inicial" class="img-cenario">
+            <p>Você encontra uma carta misteriosa em um livro antigo da biblioteca. Ela fala sobre uma cidade perdida, cheia de riquezas e belezas naturais. Decida o primeiro passo da sua jornada!</p>
+            <button class="btn-proximo" data-proximo="1">Rio de Janeiro 🌅</button>
+            <button class="btn-proximo" data-proximo="2">Pernambuco 🏖️</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <img src="img/cenario-passo1.png" alt="Pico da Tijuca" class="img-cenario">
+            <p>Você começa sua jornada no Rio de Janeiro, subindo o Pico da Tijuca ao amanhecer para encontrar a primeira pista. O que você faz?</p>
+            <button class="btn-proximo" data-proximo="3">Procurar a pista no topo 🗻</button>
+            <button class="btn-proximo" data-proximo="4">Desistir e voltar para casa 🏠</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <img src="img/cenario-passo2.png" alt="Olinda" class="img-cenario">
+            <p>Em Pernambuco, você visita a histórica cidade de Olinda. Onde procurar a próxima pista?</p>
+            <button class="btn-proximo" data-proximo="5">Igrejas antigas ⛪</button>
+            <button class="btn-proximo" data-proximo="6">Explorar as praias próximas 🏝️</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <p>No topo do Pico da Tijuca, você encontra uma inscrição antiga indicando que a próxima pista está no Amazonas!</p>
+            <button class="btn-proximo" data-proximo="7">Seguir para o Amazonas 🌳</button>
+        </div>
+        <div class="passo" id="passo-4">
+            <p>Você decide voltar para casa e sempre se pergunta o que poderia ter encontrado...</p>
+            <img src="img/cenario-passo4-voltar-casa.png" alt="De volta para casa" class="img-cenario">
+        </div>
+        <!-- Continue o fluxo até a cidade perdida -->
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
